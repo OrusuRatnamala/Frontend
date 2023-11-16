@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Promise</title>
+</head>
+
+<body>
+    <h1>Promise Example</h1>
+    <hr>
+    <p id="demo"></p>
+    <script>
+        function addition(a, b, callsuccess, callfailure) {
+            let z = a + b;
+            try {
+                console.log(z);
+                if (z > 100) {
+                    callsucces(z);
+                }
+                else {
+                    callfailure();s{
+
+                    }
+                }
+                callsuccess(z);
+            }
+            catch (e) {
+                console.log(e);
+            }
+        }
+        function callsuccess(z) {
+            document.getElementById("demo").innerHTML = z;
+        }
+        function callfailure() {
+            document.getElementById("demo").innerHTML = 'error occured';
+        }
+        addition(100, 200, callsuccess);
+    </script>
+</body>
+</html>

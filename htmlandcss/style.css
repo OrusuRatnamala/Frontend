@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+ 
+ .container {
+           width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            background-color: pink;
+}
+ .containers {
+    text-align: center;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 10px;
+}
+ 
+form {
+    margin: 20px;
+}
+ 
+h2 {
+    margin: 0;
+}
+ 
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+ 
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}

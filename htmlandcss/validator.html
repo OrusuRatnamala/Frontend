@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>JSON Validation</title>
+</head>
+<body><center>
+<h2>Login Form</h2>
+<form id="loginForm">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" oninput="validateForm()">
+<br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" oninput="validateForm()">
+<br><br>
+<button type="submit" id="submitButton" disabled onclick="success()">Submit</button>
+</form>
+<script>
+        function success() {
+            alert("Password and Username has matched");
+        }
+        function validateForm() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const submitButton = document.getElementById("submitButton");
+            if (username === password) {
+                submitButton.removeAttribute("disabled");
+            } else {
+                submitButton.setAttribute("disabled", "true");
+            }
+        }
+</script>
+</center>
+</body>
+</html>

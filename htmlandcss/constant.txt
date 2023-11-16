@@ -1,0 +1,25 @@
+in javascript  --function is treatd as class because of the prototype mechanism
+
+object.create is used to create class 
+
+car.color is a property
+
+
+=======================
+functional js---
+obejct oriented js---object
+protoptyping js--api
+
+
+propety assignment:
+syntax,
+var<variablle name>=<functionname>:function()
+{
+};
+
+arrow functions are called as 
+
+object api,javascript syntax:
+modules and exception handling and spread operator ,java mp collection,js set js stringapi
+
+

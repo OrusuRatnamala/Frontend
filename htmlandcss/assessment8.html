@@ -1,0 +1,66 @@
+<html>
+ <head>
+	<title>Application Form</title>
+ </head>
+ <body>
+	<div align="center" >
+	<h2>Tell us something postive that happened to you today.</h2>
+	<form>
+	<table cellpadding=8>
+	<tr>
+		<td align="right">Name</td>
+		<td align="left"><input type="text" name="first" placeholder="Enter your name"/></td>
+	</tr>
+	<tr>
+		<td align="right">Email</td>
+		<td align="left"><input type="text" name="email" placeholder="Enter your Email address"/></td>
+	</tr>
+	<tr>
+		<td align="right">On a scale of 1-10, how good was it?</td>
+		<td align="left"><input type="text" name="rate" placeholder="Enter a number between 1 and 10"/></td>
+	</tr>
+	<tr>
+		<td align="right">Where did it happen?</td>
+		<td align="left">
+	<select name = "where">
+		<option value="At Home">At Home</option>
+		<option value="At Office">At Office</option>
+	</select>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">At what time of day did it happen?</td>
+		<td align="left">
+			<input type="radio" id="morning" name="time" value="Morning">
+			<label for="morning">Morning</label><br>
+			<input type="radio" id="afternoon" name="time" value="Afternoon">
+			<label for="afternoon">Afternoon</label><br>
+			<input type="radio" id="evening" name="time" value="Evening">
+			<label for="morning">Evening</label>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+		<p>What emotions did you experience?</p>
+		<p>(Select all that apply)</p>
+		</td>
+		<td>
+			<input type="checkbox" name="excited" value="excited">excited<br>
+			<input type="checkbox" name="humbled" value="humbled">humbled<br>
+			<input type="checkbox" name="elate" value="elate">Elate<br>
+			<input type="checkbox" name="loved" value="loved">Loved<br>
+			<input type="checkbox" name="enthusiastic" value="enthusiastic">Enthusiastic<br>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Please describe your experience.</td>
+		<td>
+			<textarea name="experience" >Enter your experience here...</textarea>
+		</td>
+	</tr>
+	</table>
+	<input type="submit" value="Submit">
+	</form>
+	</div>
+ </body>
+</html>

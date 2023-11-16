@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+ 
+ 
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+ 
+input[type="text"] {
+  border: none;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  padding-left: 30px;
+  background-image: none;
+}
+input[type="password"] {
+  border: none;
+  border-bottom: 2px solid red;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  padding-left: 30px;
+  background-image: none;
+}
+ 
+.icon-container {
+  position: relative;
+}
+ 
+.icon-container::before {
+  content: "";
+  position: absolute;
+  top: 239%;
+  left: -4px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+ 
+ 
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+ 
+.btn {
+  background-color: pink;
+  color: white;
+  padding: 12px;
+  margin: 10px;
+  border: none;
+  width: 20%;
+  border-radius: 5px;
+  font-size: 17px;
+}
+ 
+.btn:hover {
+  background-color: #45a049;
+}
+ 
+a {
+  color: #2196F3;
+}
+ 
+hr {
+  border: 1px solid lightgrey;
+}
+ 
+span.price {
+  float: left;
+  color: grey;
+}
+ 
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+ 
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+ 
+.column {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 550px;
+  margin: 59px;
+  border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<div class="row">
+<div class="column">
+<div class="container">
+<img src="C:\Users\ratnamalao\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\credit.jpg"/>
+<!-- No image here -->
+</div>
+</div>
+<div class="column">
+<h3>Payment details</h3>
+<label for="cname" >Cardholder name</label>
+<input type="text" id="cname" name="cardname" placeholder="Name">
+<label for="ccnum" >Card number</label>
+<input type="text" id="ccnum" name="cardnumber" placeholder="Card Number">
+<div class="row">
+<div class="col-25">
+<label for="expyear" >Exp Year</label>
+<input type="text" id="expyear" name="expyear" placeholder="Year">
+</div>
+<div class="col-25">
+<label for="expmonth">Exp Month</label>
+<input type="text" id="expmonth" name="expmonth" placeholder="Month">
+</div>
+<div>
+<label for="cvv" >CVV</label>
+<input type="password" id="cvv" name="cvv" placeholder="cvv">
+</div>
+</div>
+<center>
+<label>
+<p>payment amount 12 30<span class="price" style="color:black"><b></b></span></p>
+</label>
+<input type="submit" value="Pay" class="btn">
+</center>
+</div>
+</div>
+</body>
+</html>

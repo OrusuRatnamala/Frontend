@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Application Form</title>
+<link rel="stylesheet" href="style1.css">
+<script src="ass.js"></script>
+
+</head>
+<body>
+<div class="container" align="center">
+<h2>Tell us something positive that happened to you today.</h2>
+<form onclick="return form()">
+<table cellpadding=15>
+<tr>
+<td align="right">Name</td>
+<td align="left"><input type="text" id="first" name="first" placeholder="Enter your name"/></td>
+</tr>
+<tr>
+<td align="right">Email</td>
+<td align="left"><input type="text" id="email" name="email" placeholder="Enter your Email address"/></td>
+</tr>
+<tr>
+<td align="right">On a scale of 1-10, how good was it?</td>
+<td align="left"><input type="text" id="rate" name="rate" min=1 max=10 placeholder="Enter a number between 1 and 10"/></td>
+</tr>
+<tr>
+<td align="right">Where did it happen?</td>
+<td align="left">
+<select name = "where" id="where">
+<option value="select">--select--</option>
+<option value="At Home">At Home</option>
+<option value="At Office">At Office</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align="right">At what time of day did it happen?</td>
+<td align="left">
+<input type="radio" id="time" name="time" value="Morning">
+<label for="morning">Morning</label><br>
+<input type="radio" id="time" name="time" value="Afternoon">
+<label for="afternoon">Afternoon</label><br>
+<input type="radio" id="time" name="time" value="Evening">
+<label for="morning">Evening</label>
+</td>
+</tr>
+<tr>
+<td align="right">
+<p>What emotions did you experience?</p>
+<p>(Select all that apply)</p>
+</td>
+<td>
+<input type="checkbox" id="emo" name="emo" value="excited">excited<br>
+<input type="checkbox" id="emo" name="emo" value="humbled">humbled<br>
+<input type="checkbox" id="emo" name="emo" value="elate">Elate<br>
+<input type="checkbox" id="emo" name="emo" value="loved">Loved<br>
+<input type="checkbox" id="emo" name="emo" value="enthusiastic">Enthusiastic<br>
+</td>
+</tr>
+<tr>
+<td align="right">Please describe your experience.</td>
+<td>
+<textarea name="experience" placeholder="Enter your experience here" required=""></textarea>
+</td>
+</tr>
+</table>
+<input class="button" type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>

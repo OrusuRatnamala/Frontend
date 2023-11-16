@@ -1,0 +1,69 @@
+<html>
+ <head>
+	<title>Registration Form</title>
+ </head>
+ <body>
+	<div align="center" >
+	<h2>Student Registration Form</h2>
+	<form>
+	<table cellpadding=8>
+	<tr>
+		<td align="right">FirstName</td>
+		<td align="left"><input type="text" name="firstname" placeholder="Enter your firstname"/></td>
+	</tr>
+	<tr>
+		<td align="right">MiddleName</td>
+		<td align="left"><input type="text" name="Middlename" placeholder="Enter your middlename"/></td>
+	</tr>
+	<tr>
+		<td align="right">LastName</td>
+		<td align="left"><input type="text" name="lastname" placeholder="Enter your lastname"/></td>
+	</tr>
+	<tr>
+		<td align="right">Course</td>
+		<td align="left">
+			<select name = "course">
+			<option value="At Cse">Cse</option>
+			<option value="At It">It</option>
+	</select>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Gender</td>
+		<td align="left">
+			<input type="radio" id="male" name="age" value="male">
+			<label for="male">male</label><br>
+			<input type="radio" id="female" name="age" value="female">
+			<label for="female">female</label><br>
+			<input type="radio" id="other" name="age" value="other">
+			<label for="other">other</label>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Email</td>
+		<td align="left"><input type="email" name="email" placeholder="Enter your Email address"/></td>
+	</tr>
+	<tr>
+		<td align="right">Phone</td>
+		<td align="left"><input type="text" name="Phone" placeholder="Enter your PhoneNumber"/></td>
+	</tr>
+	<tr>
+		<td align="right">Current Address</td>
+		<td>
+			<textarea name="address" ></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Password</td>
+		<td align="left"><input type="password" id="pwd" name="pwd" minlength="8" placeholder="Enter your Password"/></td>
+	</tr>
+	<tr>
+		<td align="right">re-Password</td>
+		<td align="left"><input type="password" id="pwd" name="pwd" minlength="8" placeholder="Enter your Password"/></td>
+	</tr>
+	</table>
+	<input type="submit" value="Register">
+	</form>
+	</div>
+ </body>
+</html>

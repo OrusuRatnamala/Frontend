@@ -1,0 +1,98 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 410px;
+  margin:59px;
+  border-radius:5px;
+}
+ 
+body{
+	background-color: pink;
+}
+ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+.loginbutton{
+	background-color:pink;
+	border-radius:9px;
+	color:white;
+	width:170px;
+	height:40px;
+	border:1px solid blue;
+	margin-left:163px;
+}
+ 
+.inputelemnts{
+	margin-left:167px;
+	border-radius:5px;
+}
+ 
+.or{
+	margin-left:240px;
+}
+ 
+.googleaccount{
+	margin-left:131px;
+	background-color:pink;
+	border-radius:9px;
+	color:black;
+	width:170px;
+	height:30px;
+	border:1px solid black;
+	margin-left:163px;
+}
+ 
+.loginbuttons{
+	background-color:pink;
+	border-radius:9px;
+	color:white;
+	width:170px;
+	height:40px;
+	border:1px solid blue;
+	margin-left:163px;
+
+}
+ 
+</style>
+</head>
+<body>
+ 
+<div class="row">
+<div class="column" style="background-color:white;">
+<center><h2>Login</h2></center>
+<input type="email" placeholder="Email" class="inputelemnts" required="true"/><br /> <br />
+<input type="password" placeholder="password" class="inputelemnts" required="true"/><br /><br />
+<a href="#" target="_blank" class="inputelemnts">forgot password?</a><br /><br />
+<input type="button" value="Login" class="loginbuttons" />
+<p class="inputelemnts">Don't have account? <a>Signup</a></p>
+<span class="or">Or </span> <br />
+<a href="https://www.infinite.com/" target="_blank"><input type="button" value="Login With Infinite Account" class="loginbutton" /></a><br /><br />
+<a href="https://www.google.com/account/about/?hl=en" target="_blank"><input type="button" value="Login With Google Account" class="loginbutton" />
+</div>
+<div class="column" style="background-color:white;">
+<center><h2>Signup</h2></center>
+<input type="email" placeholder="Email" class="inputelemnts" required="true"/><br /> <br />
+<input type="password" placeholder="Create Password" class="inputelemnts" required="true"/><br /><br />
+<input type="password" placeholder="Confirm Password" class="inputelemnts" required="true"/><br /><br />
+<input type="button" value="Login" class="loginbuttons" />
+<p class="inputelemnts">Don't have account? <a>Signup</a></p>
+<span class="or">Or </span>
+<a href="https://www.infinite.com/" target="_blank"><input type="button" value="Login With Infinite Account" class="loginbutton" /></a><br /><br />
+<a href="https://www.google.com/account/about/?hl=en" target="_blank"><input type="button" value="Login With Google Account" class="loginbutton" />
+</div>
+</div>
+</body>
+</html>

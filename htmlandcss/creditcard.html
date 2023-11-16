@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>card</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<style>
+table{
+padding:40px;
+}
+input.border-bottom  {
+        border-bottom: 1pt solid black;
+      }
+	  input {
+	background:none; 
+	border: 1;
+	outline: none;
+	padding: 10px 10px 10px 0;
+	margin: 0 0px;
+	color: #fff;
+	font-family: "Neue Montreal";
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+}
+.form-row{
+display:flex;
+}
+</style>
+<form>
+<table>
+<tr >
+<td rowspan="9"><img src="C:\Users\ratnamalao\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\credit.jpg" width="350" height="250"></td>
+<td>
+<h2>Payment details</h2><br>
+</td></tr>
+<tr><td><i class="fa fa-user icon"></i>CARDHOLDER NAME</td></tr>
+<tr class="border-bottom"><td><input type="text" id="name" name="name" placeholder="John Smith" ></td></tr>	
+<tr><td><i class="fa fa-credit-card icon"></i>CARD NUMBER</td></tr>
+<tr class="border-bottom"><td><input type="text" id="no" name="no" placeholder="4256 7890 5678 4532"></td></tr>
+<tr><td><i class="fa fa-calendar icon"></i>EXPIRY MONTH</td>
+<td><i class="fa fa-calendar icon"></i>EXPIRY YEAR</td>
+<td><i class="fa fa-lock icon"></i>CVV</td>
+</tr>
+<tr>
+<td><input type="month" id="month" name="month" placeholder="09" class="form-row"/></td>
+<td><input type="year" id="year" name="year" placeholder="2020"/></td>
+<td><input type="password" id="cvv" name="cvv" placeholder="cvv"/></td>
+</tr>
+<tr><td>Payment amount:  12 300$</td></tr>
+<tr><td><button type="submit" value="pay">PAY</button></td></tr>
+</table>
+</form>
+</body>
+</html>
+ 
